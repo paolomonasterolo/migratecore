@@ -22,7 +22,7 @@ pytest
 ## What we don't accept (yet)
 
 - Multi-provider support (OpenAI, Gemini, etc.). Claude-native is the wedge by design — see [`docs/SPEC.md`](docs/SPEC.md).
-- Runtime proxy mode. Considered for v0.2 as opt-in; not on the v0.1 roadmap.
+- Runtime proxy mode. By design — MigrateCore reads aggregates from the Admin API, it doesn't sit in the live request path. This is the architectural promise of the project, not a missing feature.
 - Auto-applying migrations to user code. Recommendations only; humans approve.
 
 ## Code style
