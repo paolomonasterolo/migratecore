@@ -1,0 +1,22 @@
+# Internal strategy & business docs — never commit
+docs/INTERNAL_STRATEGY.md
+docs/internal/
+*.internal.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Env
+.env
+.env.local

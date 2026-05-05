@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "starting_at": "2026-04-05T00:00:00Z",
+      "results": [
+        {
+          "workspace_id": "ws_default",
+          "api_key_id": "ak_chatbot_prod",
+          "model": "claude-sonnet-4-20250514",
+          "uncached_input_tokens": 8500000,
+          "output_tokens": 1200000,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "metadata": {}
+        },
+        {
+          "workspace_id": "ws_default",
+          "api_key_id": "ak_summarizer",
+          "model": "claude-sonnet-4-20250514",
+          "uncached_input_tokens": 3200000,
+          "output_tokens": 480000,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "metadata": {}
+        },
+        {
+          "workspace_id": "ws_default",
+          "api_key_id": "ak_classifier",
+          "model": "claude-sonnet-4-20250514",
+          "uncached_input_tokens": 4100000,
+          "output_tokens": 90000,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "metadata": {}
+        },
+        {
+          "workspace_id": "ws_research",
+          "api_key_id": "ak_research_eng",
+          "model": "claude-opus-4-20250514",
+          "uncached_input_tokens": 1100000,
+          "output_tokens": 220000,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "metadata": {"user_id": "u_42", "feature": "deep_research"}
+        }
+      ]
+    },
+    {
+      "starting_at": "2026-04-12T00:00:00Z",
+      "results": [
+        {
+          "workspace_id": "ws_default",
+          "api_key_id": "ak_chatbot_prod",
+          "model": "claude-sonnet-4-20250514",
+          "uncached_input_tokens": 9100000,
+          "output_tokens": 1300000,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "metadata": {}
+        },
+        {
+          "workspace_id": "ws_default",
+          "api_key_id": "ak_summarizer",
+          "model": "claude-sonnet-4-20250514",
+          "uncached_input_tokens": 3500000,
+          "output_tokens": 520000,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "metadata": {}
+        },
+        {
+          "workspace_id": "ws_default",
+          "api_key_id": "ak_classifier",
+          "model": "claude-sonnet-4-20250514",
+          "uncached_input_tokens": 4400000,
+          "output_tokens": 100000,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "metadata": {}
+        },
+        {
+          "workspace_id": "ws_research",
+          "api_key_id": "ak_research_eng",
+          "model": "claude-opus-4-20250514",
+          "uncached_input_tokens": 1300000,
+          "output_tokens": 260000,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "metadata": {"user_id": "u_42", "feature": "deep_research"}
+        }
+      ]
+    }
+  ]
+}

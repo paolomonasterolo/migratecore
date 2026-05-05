@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "migratecore"
+version = "0.1.0"
+description = "Migration plans for your Anthropic API spend. Cut your Claude bill."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "Paolo Monasterolo" }]
+keywords = ["anthropic", "claude", "finops", "llm", "cost", "migration"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development",
+  "Topic :: System :: Monitoring",
+]
+dependencies = [
+  "httpx>=0.27",
+  "typer>=0.12",
+  "rich>=13.7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "ruff>=0.5",
+  "mypy>=1.10",
+]
+
+[project.scripts]
+migratecore = "migratecore.cli:app"
+mc = "migratecore.cli:app"
+
+[project.urls]
+Homepage = "https://migratecore.com"
+Repository = "https://github.com/paolomonasterolo/migratecore"
+Documentation = "https://github.com/paolomonasterolo/migratecore/blob/main/docs/SPEC.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/migratecore"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/migratecore/data" = "migratecore/data"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
