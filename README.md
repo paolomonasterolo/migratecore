@@ -36,6 +36,8 @@ mc analyze
 
 The Admin key is created in the Anthropic console → **Settings → Admin Keys**. It is *not* the same as a regular API key. You need org owner or admin permissions to create one.
 
+> ⚠️ **Admin keys require an Organization account.** Anthropic's Admin API is organization-scoped and not available on Individual accounts. If you're on an Individual account analyzing your own personal API usage, MigrateCore v0.1 can't help you. See [issue #1](https://github.com/paolomonasterolo/migratecore/issues/1) for the planned opt-in SDK tracker mode that would work without Admin API access.
+
 Try the demo without an Anthropic account:
 
 ```bash
