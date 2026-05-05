@@ -2,6 +2,8 @@
 
 > Cut your Claude bill. We tell you exactly what to migrate.
 
+> **Status:** This is the v0.x vision document. v0.1.1 ships a subset: the CLI's `analyze` command (terminal and JSON output) and three migration heuristics (cache, model, tag). Commands like `mc report`, `mc auth`, `mc diff`, the HTML report, and the Cloud product are roadmap, not shipped. See [README](../README.md) for what's actually in v0.1.1.
+
 MigrateCore analyzes your Anthropic API usage and produces ranked, dollar-denominated migration plans across five categories: prompt caching, model routing, batch API, metadata tagging, and prompt deduplication.
 
 It does not sit in your API request path, store your prompts, or modify your code. It reads your usage via the Anthropic Admin API, runs a set of heuristics, and outputs a prioritized list of changes you can make — each one with an estimated dollar impact.
@@ -67,7 +69,7 @@ pipx install migratecore
 ### Configure
 
 ```bash
-export ANTHROPIC_ADMIN_KEY=sk-ant-admin-...
+export ANTHROPIC_ADMIN_KEY=sk-ant-admin01-...
 # or
 mc auth
 ```
