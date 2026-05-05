@@ -42,7 +42,7 @@ class AdminClient:
         base_url: str = ADMIN_API_BASE,
         timeout: float = DEFAULT_TIMEOUT,
     ) -> None:
-        if not admin_key.startswith("sk-ant-admin-"):
+        if not admin_key.startswith(("sk-ant-admin-", "sk-ant-admin01-")):
             raise ValueError(
                 "Admin keys start with 'sk-ant-admin-'. Regular API keys "
                 "(sk-ant-api...) cannot read usage data."
