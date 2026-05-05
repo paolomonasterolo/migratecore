@@ -1,5 +1,6 @@
 # Internal strategy & business docs — never commit
 docs/INTERNAL_STRATEGY.md
+docs/LAUNCH_DAY.md
 docs/internal/
 *.internal.md
 
