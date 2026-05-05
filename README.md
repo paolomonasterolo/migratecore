@@ -36,7 +36,7 @@ mc analyze
 
 The Admin key is created in the Anthropic console → **Settings → Admin Keys**. It is *not* the same as a regular API key. You need org owner or admin permissions to create one.
 
-> ⚠️ **Admin keys require an Organization account.** Anthropic's Admin API is organization-scoped and not available on Individual accounts. If you're on an Individual account analyzing your own personal API usage, MigrateCore v0.1 can't help you. See [issue #1](https://github.com/paolomonasterolo/migratecore/issues/1) for the planned opt-in SDK tracker mode that would work without Admin API access.
+> ⚠️ **Requires an Organization account.** MigrateCore reads usage via Anthropic's Admin API, which is organization-scoped. This is by design: the migrations MigrateCore detects — cross-key caching, per-feature attribution, multi-team chargeback — are team-scale problems. If your entire Anthropic spend is a few hundred dollars a month on a personal account, the console's usage dashboard is the right tool. MigrateCore is built for organizations with multiple keys, multiple workloads, and a finance person who'd like to know which feature costs what.
 
 Try the demo without an Anthropic account:
 
